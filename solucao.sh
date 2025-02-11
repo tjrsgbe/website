@@ -1,4 +1,4 @@
-#!/usr/bin/expect -f
+#!expect -f
 set timeout 1
 spawn ./solucao
 expect "Introduza uma solução social que pretende discutir: \r"
