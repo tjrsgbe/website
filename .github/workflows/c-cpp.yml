@@ -6,6 +6,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Verficação de versão
-      run:  lsb_release -a && gcc -v && bash -version && sudo apt-get install -y expect && which expect && sudo apt install -y gcc
+      run:  lsb_release -a && gcc -v && bash -version && sudo apt-get update -y && sudo apt-get install -y expect && which expect && sudo apt install -y gcc && 
     - name: solucao
       run:  gcc -ftest-coverage -g3 solucao.c -o solucao && chmod +x solucao.sh && bash -x solucao.sh && gcov solucao.c
