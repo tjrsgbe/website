@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 
 void discussIssue(char issue[]) {
     printf("Vamos discutir a solução: %s\n", issue);
@@ -11,7 +10,6 @@ void discussIssue(char issue[]) {
 }
 
 int main() {
-    setlocale(LC_ALL, "Portuguese");
     char issue[100];
     printf("Introduza uma solução social que pretende discutir: ");
     fgets(issue, sizeof(issue), stdin);
