@@ -8,4 +8,4 @@ jobs:
     - name: Verficação de versão
       run:  lsb_release -a && gcc -v && bash -version
     - name: random
-      run:  sudo apt-get install -y gcovr && gcc -ftest-coverage -g3 solucao.c -o solucao && ./solucao && gcov solucao.c
+      run:  sudo apt-get install -y gcovr && gcc -ftest-coverage -g3 solucao.c -o solucao && chmod +x solucao.sh && ./solucao.sh && gcov solucao
